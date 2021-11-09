@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Hipotéca</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Simulador Cuota de Hipotéca</h2>
+    </header>
+    <main>
+        <form onsubmit="calcularCuota()" id="form">
+            <label>Precio del Inmueble</label>
+            <input type="number" placeholder="Introduzca el importe" id="precio">
+
+            <label>Número de cuotas(en meses)</label>
+            <input type="number" min="12" max="120" value="36" id="cuotas">
+           
+            <label>Tipo de interés</label>
+            <select>
+                <option type="radio" value="Fijo">Fijo</option>
+                <option type="radio" value="Variable">Variable</option>
+            </select>
+
+            <label>Porcentaje</label>
+            <input type="number" min="0.1" max="10" value="5.35" step="any" id="interes" >
+
+            <input type="submit" value="Calcular">
+        </form>
+
+        <p class="resultado">La cuota será de <span id="total"></span> al mes.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    max-width: 30rem;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    background-color: #d5ab9c;
+}
+
+/* HEADER */
+header {
+    background-color: #e6e696;
+}
+
+h2 {
+    text-align: center;
+    box-shadow: 1px 3px 5px #54878f;
+    padding: 0.8rem;
+    color: #54878f;
+}
+
+/* FORMULARIO */
+form {
+    background-color: #7bc0a3;
+    display: grid;
+    padding: 1rem;
+    margin: 0.5rem 0.5rem;
+    box-shadow: 3px 7px 8px #54878f;
+}
+
+label {
+    margin-bottom: 0.3rem;
+}
+
+input {
+    margin-bottom: 0.5rem;
+    background-color: #d5ab9c;
+    color: #54878f;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+input[type=submit]{
+    border: none;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #54878f;
+    color: #e6e696;
+}
+
+select {
+    background-color: #d5ab9c;
+    color: #54878f;
+    padding: 0.5rem;
+}
+
+/* RESULTADO */
+.resultado {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#total {
+    background-color: #e6e696;
+    padding: 0.3rem;
+}
+
+p {
+    color: #54878f;
+}
